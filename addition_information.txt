@@ -1,0 +1,20 @@
+| Endpoint & Use Case           | Typical LangChain Class        | Supported Models (Examples)                                  |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------ |
+| **Chat-based LLMs**           | `ChatOpenAI`                   | `gpt-3.5-turbo`, `gpt-4`, `gpt-5`, `o3-mini`, `gpt-4o`, etc. |
+| **Legacy Completions**        | `OpenAI`                       | `gpt-3.5-turbo-instruct`, `davinci-002`, etc.                |
+| **Embeddings**                | `OpenAIEmbeddings`             | `text-embedding-ada-002`, etc.                               |
+| **Audio, Images, Moderation** | Utilities or Community Modules | `whisper-1`, `tts-1`, `dall-e-3`, etc.                       |
+
+
+Legacy Completions means Base Fine tune LLM model done by OPENAI.
+
+Temperature parameter is also know Creativityparameter based on variance of temp value they generate response.
+
+| Temperature Value | Behavior           | Output Characteristics                            | Best Use Case                                  |
+| ----------------: | ------------------ | ------------------------------------------------- | ---------------------------------------------- |
+|           **0.0** | Deterministic      | Har baar same input → same output. No randomness. | ✅ Coding, math, fact-based Q\&A, legal text    |
+|     **0.1 – 0.3** | Low randomness     | Mostly consistent, kabhi-kabhi chhoti variation.  | ✅ Summarization, FAQs, documentation           |
+|     **0.4 – 0.6** | Balanced           | Creativity + reliability ka mix.                  | ✅ Chatbots, general-purpose assistants         |
+|     **0.7 – 0.9** | High randomness    | Har response mein noticeable variation.           | ✅ Brainstorming, content writing, storytelling |
+|           **1.0** | Very creative      | Kaafi zyada variation, unpredictable outputs.     | ✅ Poetry, jokes, lyrics, idea generation       |
+|          **>1.0** | Extreme randomness | Nonsense / incoherent text bhi aa sakta hai.      | ❌ Usually not recommended                      |
