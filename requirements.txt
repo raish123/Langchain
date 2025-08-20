@@ -26,3 +26,7 @@ python-dotenv
 # Machine Learning utilities
 scikit-learn
 numpy
+
+
+#want to create frond end for users.
+streamlit
