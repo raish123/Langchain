@@ -18,3 +18,24 @@ Temperature parameter is also know Creativityparameter based on variance of temp
 |     **0.7 – 0.9** | High randomness    | Har response mein noticeable variation.           | ✅ Brainstorming, content writing, storytelling |
 |           **1.0** | Very creative      | Kaafi zyada variation, unpredictable outputs.     | ✅ Poetry, jokes, lyrics, idea generation       |
 |          **>1.0** | Extreme randomness | Nonsense / incoherent text bhi aa sakta hai.      | ❌ Usually not recommended                      |
+
+#some important class of pydantic
+
+1️⃣ Base Classes
+BaseModel → Core class for creating data models.
+Field → Field-level metadata (default, description, constraints).
+model_validator → For validating model fields.
+model_serializer → For customizing serialization output.
+computed_field → For dynamic/derived fields.
+
+2️⃣ Types & Annotations
+Annotated → Add metadata to types (works with Pydantic + typing).
+Literal → Specify exact allowed literal values.
+Optional → Optional field type.
+
+
+List, Dict, Tuple, etc. → Standard Python type hints for collections.
+Difference
+output.model_dump() → Pydantic ka dict return karega (validated data).
+output.model_dump_json() → JSON string return karega.
+dict(output) → Normal Python dict banayega, lekin Pydantic methods lose ho jaati hain.
