@@ -17,6 +17,8 @@ google-generativeai
 langchain-huggingface
 transformers
 huggingface_hub     # ⚠️ underscore, not hyphen
+sentence-transformers
+huggingface_hub[hf_xet]
 
 # Environment variable handling
 python-dotenv
