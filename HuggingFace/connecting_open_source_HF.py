@@ -8,17 +8,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #first we have to define kon se HuggingFaceEndpoint pe API Request jayeghi
-llm = HuggingFaceEndpoint(  
-repo_id="mistralai/Mistral-7B-Instruct-v0.3",  
-task="text-generation",
-max_new_tokens=512,  
-do_sample=False,  
+# Hugging Face endpoint define karo
+llm = HuggingFaceEndpoint(
+    repo_id="mistralai/Mistral-7B-Instruct-v0.3",
+    task="text-generation",
+    max_new_tokens=512,
+    do_sample=False,
+)
 
-)  
-
-
-#creating an object of ChatHuggingFace class
-chat_model = ChatHuggingFace(llm=llm,verbose=True)
+# Chat model object banao
+chat_model = ChatHuggingFace(llm=llm, verbose=True)
 
 
 #now calling builtin method invoke of ChatHuggingFace class in which we r passing input as prompt in it.
