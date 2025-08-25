@@ -32,3 +32,7 @@ numpy
 streamlit
 
 grandalf
+
+pdfplumber
+
+PyMuPDF
