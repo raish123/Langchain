@@ -1,0 +1,15 @@
+LangChain is an open-source framework that helps developers build applications powered by large language models. 
+It provides utilities to manage prompts, connect with external APIs, perform retrieval-augmented generation (RAG), 
+and handle conversation memory.
+
+Text splitting is one of the most important utilities in LangChain. Since LLMs have token limits, 
+large documents cannot be processed at once. To solve this, LangChain uses different types of splitters 
+like RecursiveCharacterTextSplitter, SentenceTransformers, and TokenTextSplitter.
+
+For example, RecursiveCharacterTextSplitter splits text into smaller chunks while trying to maintain sentence integrity. 
+This is very useful for tasks like summarization, question answering, or semantic search, 
+where context plays an important role.
+
+With proper chunking, developers can ensure that their applications are efficient, scalable, 
+and provide high-quality outputs. Visualization of how text is split can help in tuning chunk size and overlap 
+to achieve the best performance.
