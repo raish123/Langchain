@@ -43,3 +43,7 @@ chromadb
 #want to change text to gpt token we used
 tiktoken
 langchain-chroma
+
+wikepedia
+
+faiss-gpu
